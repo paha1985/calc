@@ -11,7 +11,10 @@
   },
   "devDependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@ant-design/icons": "5.0.1",
+=======
+>>>>>>> 91e7052 (install ant design)
 =======
 >>>>>>> 91e7052 (install ant design)
     "@types/node": "^20.1.3",
