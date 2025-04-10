@@ -24,38 +24,43 @@
 4. git merge feature/add-ant-design
 
 Задача №3		
-git checkout feature/core
-git rebase development
-git checkout development
-git merge feature/core
 
-git checkout feature/calculator
-git rebase development
-git checkout development
-git merge feature/calculator
+   git checkout feature/core
+   git rebase development
+   git checkout development
+   git merge feature/core
 
-git checkout feature/calculator-actions
-git rebase development
-git checkout development
-git merge feature/calculator-actions
+   git checkout feature/calculator
+   git rebase development
+   git checkout development
+   git merge feature/calculator
 
-При возникновении конфликтов устраням
+   git checkout feature/calculator-actions
+   git rebase development
+   git checkout development
+   git merge feature/calculator-actions
 
-Задача №4
-Копируем файлы из задания в папку patches
-git checkout development 
-git apply ./patches/patch_2.diff
-git apply ./patches/patch_3.diff
-git apply ./patches/patch_1.diff
-git add .
-git commit -m 'feat:changes from patches'
+   При возникновении конфликтов устраням
+
+   Задача №4
+   
+   Копируем файлы из задания в папку patches
+   
+   git checkout development 
+   git apply ./patches/patch_2.diff
+   git apply ./patches/patch_3.diff
+   git apply ./patches/patch_1.diff
+   git add .
+   git commit -m 'feat:changes from patches'
 
 5. Производим rebase коммитов согласно conventional commits, после чего производим заливку в main
-git rebase -i HEAD~14
-git rebase main
-git checkout main
-git merge development
+   
+   git rebase -i HEAD~14
+   git rebase main
+   git checkout main
+   git merge development
 
 6.Создаём репозиторий на GitHub и добавляем удаленный репозиторий
-git remote add origin https://github.com/paha1985/calc.git
-git push --all
+
+   git remote add origin https://github.com/paha1985/calc.git
+   git push --all
