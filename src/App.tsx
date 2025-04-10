@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -29,6 +30,22 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
+=======
+import './App.css'
+import {ConfigProvider} from 'antd';
+import {ANT_THEME_CONFIG} from 'src/constants/configTheme.ts';
+import {CommonLayout} from 'src/components/CommonLayout';
+import {Calculator} from 'src/components/Calculator';
+
+function App() {
+
+  return (
+    <ConfigProvider theme={ANT_THEME_CONFIG}>
+      <CommonLayout>
+        <Calculator />
+      </CommonLayout>
+    </ConfigProvider>
+>>>>>>> development
   )
 }
 
